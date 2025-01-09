@@ -6,7 +6,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    software-properties-common rsyslog systemd systemd-cron && \
+    software-properties-common rsyslog systemd systemd-cron ssh && \
     apt-get clean && \
     rm -Rf /usr/share/doc && \
     rm -Rf /usr/share/man && \
